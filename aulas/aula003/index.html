@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dados com JS</title>
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(8, 8, 177);
+            font: normal 18px Arial;
+        }
+
+        h1 {
+            color: rgb(194, 194, 6);
+        }
+    </style>
 </head>
 <body>
-    <h1>Trabalhando com dados v1.0</h1>
-    <button onclick="inicio()">Clique aqui para começar</button>
+    <h1>Olá Mundo</h1>
+    <h2>Já me livrei da maldição"</h2>
     <script>
-        function inicio() {
-            var nome = window.prompt('Qual é o seu nome?')
-            window.alert('Olá, ${nome}! É um prazer te conhecer!')
-        }
+        var n1 = Number.parseInt(window.prompt('Digite um número!')) //Number.parseInt Usado para número inteiro
+        var n2 = Number.parseInt(window.prompt('Digite mais um!')) //Number.parseFloat Usado para número flutuante Number O próprio Java vai identificar se é inteiro ou não.
+        var s = n1+n2 //Adição
+        window.alert('A soma entre os números é ' + s) //Concatenação
+        
     </script>
     
 </body>

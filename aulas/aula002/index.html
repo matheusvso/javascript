@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interação JS</title>
+    <title>Meu primeiro programa</title>
     <style>
         body {
-            font: 12pt Arial;
+            background-color: rgb(8, 8, 177);
+            font: normal 18px Arial;
         }
 
-        button {
-            font-size: 12pt;
-            padding: 30px;
+        h1 {
+            color: rgb(194, 194, 6);
         }
     </style>
 </head>
 <body>
-    <h1>Interagindo com um botão</h1>
-    <button onclick="clicou()">Clique em mim!</button>
+    <h1>Olá Mundo</h1>
+    <h2>Já me livrei da maldição"</h2>
     <script>
-        function clicou() {
-            window.alert('Você clicou no botão!')
-        }
+        var nome = window.prompt('Qual é seu nome?')
+        window.alert('Prazer em te conhecer,' + nome + '!!!')
+        
     </script>
+    
 </body>
 </html>
